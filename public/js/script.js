@@ -16,3 +16,13 @@
       }, false)
     })
   })()
+
+  const chatbotToggle = document.getElementById('chatbotToggle');
+    const chatbotPopup = document.getElementById('chatbotPopup');
+
+    // Toggle chatbot visibility
+    chatbotToggle.addEventListener('click', () => {
+      const isOpen = chatbotPopup.style.display === 'block';
+      chatbotPopup.style.display = isOpen ? 'none' : 'block';
+      chatbotToggle.textContent = isOpen ? 'Chat with us' : 'Close Chat';
+    });

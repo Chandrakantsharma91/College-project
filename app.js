@@ -102,14 +102,14 @@ app.put("/listings/:id" ,
     
 }))
 
-// Delete
-app.delete("/listings/:id" ,wrapAsync(async (req , res)=>{
-    let {id} = req.params;
-    let deletedListing =  await Listing.findByIdAndDelete(id);
-    console.log(deletedListing);
-    res.redirect("/listings");
-})
-)
+// // Delete
+// app.delete("/listings/:id" ,wrapAsync(async (req , res)=>{
+//     let {id} = req.params;
+//     let deletedListing =  await Listing.findByIdAndDelete(id);
+//     console.log(deletedListing);
+//     res.redirect("/listings");
+// })
+// )
 
 
 // app.get("/testListing" , async (req , res)=>{

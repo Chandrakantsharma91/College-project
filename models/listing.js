@@ -15,6 +15,7 @@ const listeningSchema = new Schema({
     },
     price : Number,
     price1 : Number,
+    price2 : Number,
     
 });
 
